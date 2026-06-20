@@ -1,0 +1,101 @@
+<svg width="900" height="320" viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f0b"/>
+      <stop offset="100%" stop-color="#060806"/>
+    </linearGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="screenClip">
+      <rect x="14" y="14" width="872" height="292" rx="10"/>
+    </clipPath>
+
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff9c" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00ff9c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="320" rx="14" fill="url(#bgGrad)"/>
+  <rect x="2" y="2" width="896" height="316" rx="13" fill="none" stroke="#0f3d28" stroke-width="2"/>
+
+  <!-- title bar -->
+  <rect x="14" y="14" width="872" height="34" rx="10" fill="#0d1a12"/>
+  <circle cx="34" cy="31" r="6" fill="#ff5f56"/>
+  <circle cx="54" cy="31" r="6" fill="#ffbd2e"/>
+  <circle cx="74" cy="31" r="6" fill="#27c93f"/>
+  <text x="450" y="35" text-anchor="middle" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" fill="#3fae7c">rajan@devbox: ~/profile — 88×24</text>
+
+  <g clip-path="url(#screenClip)">
+    <rect x="14" y="48" width="872" height="258" fill="#070b08"/>
+
+    <!-- scanline sweep -->
+    <rect x="14" y="48" width="872" height="60" fill="url(#scanGrad)">
+      <animate attributeName="y" values="48;306;48" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" filter="url(#glow)">
+
+      <text x="34" y="76" fill="#3fae7c" opacity="0">
+        [    0.000000] booting profile.img (rajanv21) ...
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.01;0.05;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="34" y="98" fill="#3fae7c" opacity="0">
+        [    0.181203] mounting /dev/career on /
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.08;0.12;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="34" y="120" fill="#3fae7c" opacity="0">
+        [    0.402891] loading identity module ............ [ OK ]
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.16;0.20;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="34" y="142" fill="#3fae7c" opacity="0">
+        [    0.611447] loading stack-trace module .......... [ OK ]
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.24;0.28;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="34" y="164" fill="#3fae7c" opacity="0">
+        [    0.802012] checking certifications.lock ........ [ OK ]
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.32;0.36;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="34" y="186" fill="#3fae7c" opacity="0">
+        [    0.950500] system check complete.
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.40;0.44;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- identity reveal -->
+      <text x="34" y="222" font-size="26" font-weight="700" fill="#00ff9c" opacity="0">
+        RAJAN VISHWAKARMA
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.50;0.56;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <text x="34" y="250" font-size="15" fill="#00b86b" opacity="0">
+        Full Stack MERN Developer · Pune, Maharashtra, IN
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.60;0.65;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- status line -->
+      <text x="34" y="278" font-size="14" fill="#00ff9c" opacity="0">
+        status: <tspan fill="#7dffce">ACTIVE</tspan> — shipping @ Innovit Labs
+        <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.72;0.78;1" dur="14s" repeatCount="indefinite"/>
+      </text>
+
+      <!-- blinking cursor -->
+      <rect x="34" y="288" width="10" height="16" fill="#00ff9c" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0;0;1;1;0" keyTimes="0;0.80;0.81;0.85;0.86;0.90;0.91;0.95;0.96;1" dur="14s" repeatCount="indefinite"/>
+      </rect>
+
+    </g>
+  </g>
+</svg>
