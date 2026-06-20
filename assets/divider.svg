@@ -1,0 +1,29 @@
+<svg width="900" height="34" viewBox="0 0 900 34" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fadeL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#00ff9c" stop-opacity="0.55"/>
+    </linearGradient>
+    <linearGradient id="fadeR" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff9c" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00ff9c" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="34" fill="none"/>
+
+  <line x1="20" y1="17" x2="370" y2="17" stroke="url(#fadeL)" stroke-width="1.5"/>
+  <line x1="530" y1="17" x2="880" y2="17" stroke="url(#fadeR)" stroke-width="1.5"/>
+
+  <circle cx="450" cy="17" r="4" fill="#00ff9c">
+    <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <g font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" fill="#00b86b">
+    <text x="385" y="21">
+      <tspan>proc</tspan><tspan fill="#00ff9c">_</tspan><tspan>active</tspan>
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>
