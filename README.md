@@ -204,6 +204,12 @@ rajan@devbox:~$ find ./projects -maxdepth 1 -type d
 ```
 
 ```
+NAME      copify
+STACK     Next.js + Supabase + Razorpay
+FEATURES  AI-generated product listings (Gemini)
+          magic-link auth · usage-based plans
+          subscription billing · Shopify/Etsy export
+STATUS    live — copify-nine.vercel.app
 rajan@devbox:~$ cat ./projects/multi-vendor-ecommerce-platform/README
 ```
 
