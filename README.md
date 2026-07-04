@@ -197,6 +197,7 @@ rajan@devbox:~$ find ./projects -maxdepth 1 -type d
 ```
 
 ```
+./projects/copify
 ./projects/multi-vendor-ecommerce-platform
 ./projects/ai-integrated-crm-platform
 ./projects/realtime-analytics-dashboard
